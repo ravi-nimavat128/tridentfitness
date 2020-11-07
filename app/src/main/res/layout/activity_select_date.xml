@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.tridentfitness.activities.SelectDateActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="#00B666">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+           android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:text="April"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/ptsanscaptionbold05"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectdate_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

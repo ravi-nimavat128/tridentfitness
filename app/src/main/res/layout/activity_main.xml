@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="apps.tridentfitness.activities.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/rel_holder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Home"
+                android:textColor="@color/header_black"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/ptsanscaptionbold05" />
+
+            <ImageView
+                android:id="@+id/txt_proposed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="#E4E3E3" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_main">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+                >
+            <RelativeLayout
+                android:id="@+id/rel_topHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp">
+
+                <TextView
+                    android:id="@+id/txtProposed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Proposed"
+                    android:visibility="gone"
+                    android:textColor="@color/header_black"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/ptsansbold01" />
+
+                <TextView
+                    android:id="@+id/txt_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtProposed"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:text="We propose few best scientific exercise"
+                    android:textColor="@color/header_black"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/txt_greenLine"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/txt_Description"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/lince_color" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rel_topHolder"
+                android:id="@+id/recylerview"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_homePageCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@color/white"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rel_bottom"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_below="@id/recylerview">
+
+                <RelativeLayout
+                    android:id="@+id/rel_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/header_line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_bottomHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rel_img"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+
+                    <TextView
+                        android:id="@+id/txt_otions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Options"
+                        android:textColor="@color/header_black"
+                        android:textSize="@dimen/_18sdp"
+                        android:fontFamily="@font/ptsansbold01" />
+
+
+                    <TextView
+                        android:id="@+id/txt_option_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_otions"
+                        android:layout_marginTop="6dp"
+                        android:text="Choose options from below for other services"
+                        android:textColor="@color/header_black"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <ImageView
+                        android:id="@+id/txt_greenLine1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_4sdp"
+                        android:layout_below="@+id/txt_option_description"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@color/lince_color" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scroll_horizontole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_greenLine1"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:scrollbars="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_workout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false">
+
+                                <ImageView
+                                    android:id="@+id/img_workout"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:src="@drawable/workout" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_workout"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:text="workout"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_custom"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_toEndOf="@+id/rel_workout"
+                                android:focusableInTouchMode="false">
+
+                                <ImageView
+                                    android:id="@+id/img_custom"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:src="@drawable/custom" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_custom"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:text="custom"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_toEndOf="@+id/rel_custom"
+                                android:focusableInTouchMode="false">
+
+                                <ImageView
+                                    android:id="@+id/img_progress"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:src="@drawable/progress" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_progress"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:text="progress"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_toEndOf="@+id/rel_progress"
+                                android:focusableInTouchMode="false">
+
+                                <ImageView
+                                    android:id="@+id/img_setting"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:src="@drawable/settings" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_setting"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:text="settings"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_bmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_toEndOf="@+id/rel_setting"
+                                android:focusableInTouchMode="false">
+
+                                <ImageView
+                                    android:id="@+id/img_bmi"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:src="@drawable/bmi" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_bmi"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:text="BMI"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_black"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+
+
+                    <!--  android:background="#37AE90"-->
+                    <!-- android:background="@drawable/btnimg"-->
+                    <Button
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:text="Ask Quetions Or Give Us Your Feedback"
+                        android:background="@drawable/btnimg"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/scroll_horizontole"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:textColor="#585858"
+                        android:id="@+id/btnfeedback"/>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

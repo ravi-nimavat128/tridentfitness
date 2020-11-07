@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/img_pro"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_60sdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diet Name"
+            android:id="@+id/txt_diet_name"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="117 cal"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+       
+            android:textColor="@color/black"
+            android:id="@+id/txt_cal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_below="@+id/txt_diet_name"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="117 cal"
+               android:layout_marginRight="@dimen/_20sdp"
+          
+               android:textColor="@color/black"
+               android:id="@+id/txt_food_name"
+               android:layout_marginLeft="@dimen/_10sdp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="117 cal"
+               android:layout_marginRight="@dimen/_20sdp"
+               android:layout_alignParentRight="true"
+          
+               android:textColor="@color/black"
+               android:id="@+id/diet_cal"
+               android:layout_marginLeft="@dimen/_10sdp"
+               />
+
+
+       </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

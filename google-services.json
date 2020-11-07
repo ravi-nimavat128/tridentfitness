@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "363165635593",
+    "firebase_url": "https://tridentfitness-9300f.firebaseio.com",
+    "project_id": "tridentfitness-9300f",
+    "storage_bucket": "tridentfitness-9300f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363165635593:android:76c9f4ea2a0e5e16e094d8",
+        "android_client_info": {
+          "package_name": "apps.tridentfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363165635593-gb6tg2kinvdhg8m29kd3oqhu5ceq1mr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.tridentfitness",
+            "certificate_hash": "31b79a7ec54e85a128f949bd6f53ca6b44ba494c"
+          }
+        },
+        {
+          "client_id": "363165635593-gdhvfre8md17g1jc0839o9cs6hfodqn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLBgwvUlp-Q5UBQdJuSX8FQzL233jTfAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363165635593-gdhvfre8md17g1jc0839o9cs6hfodqn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

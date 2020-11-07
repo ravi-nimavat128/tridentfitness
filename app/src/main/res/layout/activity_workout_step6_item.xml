@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#37AE90">
+
+            <RelativeLayout
+                android:id="@+id/rel_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/txt_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/ptsanscaptionbold05"
+                    android:text="@string/select_workout"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rel_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@id/rel_header"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="#37AE90"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/rele_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/serving_rect">
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="08"
+                        android:textSize="@dimen/_19sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_time"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="@string/minut"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rele_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/rele_time1"
+                    android:layout_weight="1"
+                    android:background="@drawable/serving_rect">
+
+                    <TextView
+                        android:id="@+id/txt_totalworkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="12"
+                        android:textSize="@dimen/_19sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_totalworkout"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="@string/workout"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rele_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/rele_workout"
+                    android:layout_weight="1"
+                    android:background="@drawable/serving_rect">
+
+                    <TextView
+                        android:id="@+id/txt_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="50"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_19sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_calories"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/ptsansregular01"
+                        android:text="@string/calories"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/rel_main"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rel_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="#F2F5F4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:text="Step 6 of 6 : Add Workout Details" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rele_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_repeatworkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_edtinput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:gravity="center">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_workoutname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_11sdp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="true"
+                            android:theme="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/ptsanscaption06"
+                                android:hint="@string/workout_name"
+                                android:maxLength="20"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="true"
+                                android:textSize="14sp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rel_edtinput"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:autoSizeTextType="uniform">
+
+                        <TextView
+                            android:id="@+id/txt_repeatwork"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:gravity="center"
+                            android:text="@string/repeat_workout"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/txt_repeatecercise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_repeatwork"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/repeat_excecise"
+                            android:textSize="@dimen/_12sdp"
+                            app:autoSizeTextType="uniform" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_below="@id/rel_text"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_one_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:onClick="onClick">
+
+
+                            <TextView
+                                android:id="@+id/txt_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/repeat_1"
+                                android:textSize="@dimen/_19sdp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_two_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@id/rel_one_layout"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:onClick="onClick">
+
+
+                            <TextView
+                                android:id="@+id/txt_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/repeat_2"
+                                android:textSize="@dimen/_19sdp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_three_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@id/rel_two_layout"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:onClick="onClick">
+
+
+                            <TextView
+                                android:id="@+id/txt_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/repeat_3"
+                                android:textSize="@dimen/_19sdp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_interval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F5F4">
+
+                    <RelativeLayout
+                        android:id="@+id/rele_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txt_intervaltime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/interval_time"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/txt_chooseintervaltime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_intervaltime"
+                            android:layout_marginTop="@dimen/_3sdp"
+
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/choose_excecise"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_below="@id/rele_interval"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_5seonds_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:gravity="center_horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:id="@+id/txt_interval_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/interval_5"
+                                android:textSize="@dimen/_19sdp" />
+                        </RelativeLayout>
+                        <!--  <TextView
+                              android:id="@+id/txt_interval_fiil_1"
+                              android:layout_width="100sp"
+                              android:layout_height="50sp"
+                              android:layout_marginStart="20sp"
+                              android:background="#37AE90"
+                              android:gravity="center"
+                              android:text="@string/interval_5"
+                              android:textColor="#fff"
+                              android:textSize="20sp"
+                              android:visibility="visible" />-->
+                        <RelativeLayout
+                            android:id="@+id/rl_10seonds_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:gravity="center_horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:id="@+id/txt_interval_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/interval_10"
+                                android:textSize="@dimen/_19sdp" />
+                        </RelativeLayout>
+
+
+                        <!-- <TextView
+                             android:id="@+id/txt_interval_fiil_2"
+                             android:layout_width="100sp"
+                             android:layout_height="50sp"
+                             android:layout_marginStart="15sp"
+                             android:layout_toEndOf="@id/txt_interval_1"
+                             android:background="@drawable/repeat_fill_box"
+                             android:gravity="center"
+                             android:text="@string/interval_10"
+                             android:textColor="#fff"
+                             android:textSize="20sp"
+                             android:visibility="invisible" />-->
+                        <RelativeLayout
+                            android:id="@+id/rl_15seconds_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/repeat_box"
+                            android:gravity="center_horizontal"
+                            android:onClick="onClick">
+
+
+                            <TextView
+                                android:id="@+id/txt_interval_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/ptsansregular01"
+                                android:gravity="center"
+                                android:text="@string/interval_15"
+                                android:textSize="@dimen/_19sdp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_workout"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/rel_interval"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/workout_btn"
+                    android:fontFamily="@font/ptsanscaptionbold05"
+                    android:onClick="onClick"
+                    android:text="@string/add_workout"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/imgback"
+            android:text="Diet Plan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_toLeftOf="@+id/iimg_menu"
+            android:src="@drawable/ic_setting" />
+
+        <ImageView
+            android:id="@+id/iimg_menu"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/ic_setting" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="0 to 2000 cal eaten"
+        android:textSize="@dimen/_15sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/welcome" />
+
+
+    <RelativeLayout
+        android:id="@+id/breakfast_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txt_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_break"
+            android:text="0 to 530 Cal"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <ImageView
+            android:id="@+id/img_break"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:src="@drawable/ic_plus" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle_view_breakast"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        android:id="@+id/layout_morning"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txt_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Snack"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_snack"
+            android:text="0 to 530 Cal"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/img_snack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:src="@drawable/ic_plus" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recycle_view_morning"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:visibility="gone"
+        android:id="@+id/layout_lunch"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_lunch"
+            android:text="0 to 530 Cal"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/img_lunch"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:src="@drawable/ic_plus" />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recycle_view_lunch"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:id="@+id/layout_snack"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evening Snack"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_evening_snack"
+            android:text="0 to 530 Cal"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/img_evening_snack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/ic_plus" />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recycle_view_snack"
+
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:id="@+id/layout_dinner"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_dinner"
+            android:text="0 to 530 Cal"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/img_dinner"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:src="@drawable/ic_plus" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recycle_view_dinner"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+</LinearLayout>

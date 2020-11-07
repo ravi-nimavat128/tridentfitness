@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    tools:context="apps.tridentfitness.activities.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:visibility="gone"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/ripple"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/ptsanscaptionbold05"
+            android:text="SETTINGS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/real_rateus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/rate_us"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/mcv_action_next" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/real_contactus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/contsct_us"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/mcv_action_next" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/reminder"
+                            android:textColor="#585858" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/switch_button"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_3sdp"
+                            app:sb_checked="false"
+                            app:sb_checked_color="@color/colorAccent"
+                            app:sb_show_indicator="false" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/rele_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/reminder_time"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rele_timepicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/txt_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/timepicker"
+                                android:text="20:02"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <ImageView
+                                android:id="@+id/timepicker"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:background="@drawable/mcv_action_next" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:text="APP VOLUME"
+                    android:textColor="#585858" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <ImageView
+                            android:id="@+id/img_mute"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ripple"
+                            android:src="@drawable/mute" />
+
+                        <SeekBar
+                            android:id="@+id/vollume_seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_toStartOf="@+id/img_full"
+                            android:layout_toEndOf="@+id/img_mute"
+                            android:theme="@style/SeekBarColor" />
+
+                        <ImageView
+                            android:id="@+id/img_full"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/vollume_up" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/countdown_seconds"
+                            android:textColor="#585858" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/sound_switch"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorAccent"
+                            app:sb_show_indicator="false" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/voice_guidance"
+                            android:textColor="#585858" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/guidance_switch"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_marginBottom="4dp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorAccent"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="Halfway Promt"
+                            android:textColor="#585858" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/halfway_switch"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_3sdp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorAccent"
+                            app:sb_show_indicator="false" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rele_circuit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/circuit" />
+
+
+                        <TextView
+                            android:id="@+id/txt_circuit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/img_next"
+                            android:fontFamily="@font/ptsansregular01"
+
+                            android:text="One"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:id="@+id/img_next"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/mcv_action_next" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/rele_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="Reset Settings"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/mcv_action_next" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="@color/line_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="Logout"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/mcv_action_next" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rele_privecy"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/privacy_policy"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/mcv_action_next"
+                            android:textColor="#585858" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/rele_term"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/ptsansregular01"
+                            android:text="@string/terms_of_use"
+                            android:textColor="#585858" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:padding="3dp"
+                            android:src="@drawable/mcv_action_next" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

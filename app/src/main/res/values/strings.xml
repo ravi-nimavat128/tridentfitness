@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Trident Fitness</string>
+    <string name="bullet">●</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="calories">CALORIES</string>
+    <string name="workout">WORKOUT</string>
+    <string name="minut">MINUTE</string>
+    <string name="select_workout">SELECT WORKOUT</string>
+    <string name="repeat_workout">REPEAT WORKOUT</string>
+    <string name="repeat_excecise">Select no of time you want to repeat excercise </string>
+    <string name="interval_time">INTERVAL TIME</string>
+    <string name="choose_excecise">Choose your interval time between two excercise</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="interval_5">05</string>
+    <string name="interval_10">10</string>
+    <string name="interval_15">15</string>
+    <string name="repeat_1">1</string>
+    <string name="repeat_2">2</string>
+
+    <string name="show_admmob_ads" translatable="false">no</string>
+<!--    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+
+<!--    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-6796606747918143/8488915259</string>-->
+<!--    <string name="interstial_ad_unit_id" translatable="false">ca-app-pub-6796606747918143/9746156603</string>-->
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstial_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+<!--    <string name="interstial_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="show_facebook_ads" translatable="false">yes</string>
+<!--    <string name="facebook_interstial" translatable="false">VID_HD_16_9_46S_APP_INSTALL#YOUR_PLACEMENT_ID</string>-->
+<!--    <string name="facebook_banner_id" translatable="false">VID_HD_16_9_46S_APP_INSTALL#YOUR_PLACEMENT_ID</string>-->
+
+    <string name="facebook_interstial" translatable="false">VID_HD_16_9_46S_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="facebook_banner_id" translatable="false">VID_HD_16_9_46S_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+<!--    <string name="facebook_interstial" translatable="false">394161391135441_394162127802034</string>-->
+<!--     <string name="facebook_banner_id" translatable="false">607114842814465_1115067832019161"</string>-->
+
+    <string name="repeat_3" translatable="false">3</string>
+    <string name="how_todo" translatable="false">HOW TO DO EXCECISE ?</string>
+    <string name="youtube_key" translatable="false">AIzaSyCq6e3mcvzUXyFmks5qdyHw45Sy9cQ6wF4</string>
+    <string name="filled_bullet" translatable="false">&#8226;</string>
+    <string name="txt_detail" translatable="false">The exercise should be performed in rapid succession, allowing 30 seconds for each, while,throughout, the intensity hovers at about an 8.</string>
+    <string name="are_you_ready">ARE YOU READY ?</string>
+    <string name="txt_content">Are you excited to start workout feel the energy inside you, focus on your today\'s goal, visiulise your dream body and lets start</string>
+    <string name="txt_yes">YES, I M READY</string>
+    <string name="txt_no">NO, HOLD ON</string>
+    <string name="cusom_workout">CUSOM WORKOUT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="bmi_">The BMI is a measurement of a person\'s leanness based on their height and weight.\nAlthough it has limitations,your BMI can be used as a general indicator for body weight health.</string>
+    <string name="underweight">underweight</string>
+    <string name="normal">Healthy Weight</string>
+    <string name="overweight">overweight</string>
+    <string name="obese_class_i">Overweight</string>
+    <string name="obese_class_ii">obesity</string>
+    <string name="obese_class_iii">High obesity</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="contsct_us">Contsct Us</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="countdown_seconds">Countdown Seconds</string>
+    <string name="voice_guidance">Voice Guidance</string>
+    <string name="circuit">Circuit</string>
+    <string name="terms_of_use">Terms Of use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+   <!-- <string name="step1">Pick 3 Total Body Exercises</string>
+    <string name="step2">Pick 3 Lower Body Exercises</string>
+    <string name="step3">Pick 3 Upper Body Exercises</string>
+    <string name="step4">Pick 3 Core Exercises</string>
+    <string name="step5">Confirm Workout Order</string>
+-->
+
+
+    <string name="step1">Select Any 3 Total Body Exercises</string>
+    <string name="step2">Select Any 3 Lower Body Exercises</string>
+    <string name="step3">Select Any 3 Upper Body Exercises</string>
+    <string name="step4">Select Any 3 Core Exercises</string>
+    <string name="step5">Confirm Workout Order</string>
+
+
+    <string name="next1">NEXT </string>
+
+    <string name="txt_privecy">Privacy</string>
+    <string name="privecy_filename">Privacy.html</string>
+    <string name="txt_term">Terms Of use</string>
+    <string name="term_filename">Term.html</string>
+    <string name="email_id">test@gmail.com</string>
+    <string name="delete">Delete</string>
+</resources>

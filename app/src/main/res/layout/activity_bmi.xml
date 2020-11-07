@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="apps.tridentfitness.activities.BmiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/ptsanscaptionbold05"
+            android:includeFontPadding="false"
+            android:text="BMI-Body Mass Index"
+            android:textColor="#464646"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsansregular01"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="@string/bmi_"
+            android:textColor="#575757"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsans_bold"
+            android:includeFontPadding="false"
+            android:text="Weight"
+            android:textColor="#575757"
+            android:textSize="@dimen/_15sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/edt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/lay_btns"
+                android:backgroundTint="#DFDFE2"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:id="@+id/lay_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/btn_kg"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/btn_selected_weight"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="kg"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/btn_lb"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/btn_unselected_weight"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="lb"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsans_bold"
+            android:includeFontPadding="false"
+            android:text="Height"
+            android:textColor="#575757"
+            android:textSize="@dimen/_15sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/edt_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toStartOf="@+id/lay_height_btns"
+                android:backgroundTint="#DFDFE2"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:id="@+id/lay_inches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toStartOf="@+id/lay_height_btns"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_feet"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DFDFE2"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:text="ft" />
+
+                <EditText
+                    android:id="@+id/edt_inche"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DFDFE2"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:text="in" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_height_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/btn_cm"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/btn_selected_weight"
+                    android:gravity="center"
+                    android:text="cm"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/btn_in"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/btn_unselected_weight"
+                    android:gravity="center"
+                    android:text="in"
+                    android:fontFamily="@font/ptsansregular01"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_13sdp">
+
+
+        <TextView
+            android:id="@+id/btn_calculate"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/btn_selected_weight"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/ptsansregular01"
+            android:gravity="center"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="NewApi" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ptsans_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="BMI :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/txt_bmians"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/ptsans_bold"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

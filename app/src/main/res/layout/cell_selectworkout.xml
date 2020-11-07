@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp">
+
+
+     <!--   <RelativeLayout
+            i
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+
+            <CheckBox
+                android:id="@+id/uncheckBox"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_alignParentStart="true"
+                android:button="@drawable/customcheckbox"
+                android:visibility="visible" />
+
+
+     <!--   </RelativeLayout>-->
+
+
+
+        <!-- <CheckBox
+             android:id="@+id/checkBox"
+             android:layout_width="30sp"
+             android:layout_height="30sp"
+             android:layout_marginStart="10dp"
+             android:layout_centerVertical="true"
+             android:button="@drawable/customcheckbox"/>-->
+
+        <ImageView
+            android:id="@+id/img_jumping"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toEndOf="@id/uncheckBox"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rectangle_image"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/img_jumping"
+            android:layout_toStartOf="@+id/img_arrow"
+            android:text="JUMPING JACKS"
+            android:textColor="#303030"
+            android:fontFamily="@font/ptsansregular01"
+            android:textSize="15sp"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_detailarrow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/details"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="#ADADAD" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="apps.tridentfitness">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".WorkOutApps"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="apps.tridentfitness.activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name="apps.tridentfitness.activities.Splacescreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="apps.tridentfitness.activities.WorkoutStep1to4Item"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.CompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.RestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.SelectDateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.BmiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.ProgressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.CustomWorkoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.AllWorkOutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.WorkoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.ExcerciseDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.MainActivity"
+            android:screenOrientation="portrait">
+         <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <activity
+            android:name="apps.tridentfitness.activities.DaysActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="apps.tridentfitness.activities.CustomWorkoutItem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.WorkoutStep6Item"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.tridentfitness.activities.WorkoutStep5Item"
+            android:screenOrientation="portrait" />
+        <activity android:name="apps.tridentfitness.activities.TermOfUse" />
+        <activity android:name="apps.tridentfitness.activities.Privecy" />
+
+        <receiver android:name="apps.tridentfitness.recivers.AlarmReceiver"
+                  android:enabled="true"
+                  android:exported="true"/>
+        <activity
+            android:name="apps.tridentfitness.activities.LoginActiviyt"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

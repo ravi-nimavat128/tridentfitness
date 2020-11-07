@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_pos">
+
+            <TextView
+                android:id="@+id/txt_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:text="01"
+                android:textColor="#333333"
+                android:fontFamily="@font/ptsansregular01"
+                android:textSize="@dimen/_35sdp"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_excecisestep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rel_pos"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="start"
+            android:fontFamily="@font/ptsanscaption06"
+            android:text="Stand upright with your legs together, arms at your sides "
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

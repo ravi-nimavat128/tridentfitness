@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:layout_above="@id/rel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rel_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="#37AE90">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:id="@+id/img_back"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/txt_workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:text="@string/cusom_workout"
+                android:fontFamily="@font/ptsanscaptionbold05"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:text="@string/delete"
+                android:fontFamily="@font/ptsanscaptionbold05"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@id/rel_header">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/listview"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:id="@+id/rel_btn"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+
+        <Button
+            android:id="@+id/btn_startWorkout"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/workout_btn"
+            android:text="start"
+            android:fontFamily="@font/ptsanscaptionbold05"
+            android:textAllCaps="true"
+            android:textColor="#fff"  />
+
+
+    </RelativeLayout>
+</RelativeLayout>

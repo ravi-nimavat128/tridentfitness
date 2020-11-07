@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="androidcolors">
+        <item>#FAE3E7</item>
+        <item>#D6F9F0</item>
+        <item>#EEDDFA</item>
+        <item>#DBFBFA</item>
+    </string-array>
+</resources>

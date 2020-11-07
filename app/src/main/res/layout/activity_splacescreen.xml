@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spalsh_screen"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/top_single_round"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_height="@dimen/_130sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Tutorial"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/txt_tutorials"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Welcome to"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txt_tutorials"
+            android:textSize="@dimen/_25sdp"
+            android:id="@+id/txt_welcome"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_get_started"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:background="@drawable/white_side_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

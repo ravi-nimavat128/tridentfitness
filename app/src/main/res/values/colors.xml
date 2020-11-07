@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44236</color>
+    <color name="colorPrimaryDark">#F44236</color>
+    <color name="colorAccent">#F44236</color>
+
+    <color name="header_black">#38454B</color>
+    <color name="lince_color">#F44236</color>
+    <color name="header_line">#E4E3E3</color>
+    <color name="green">#F44236</color>
+    <color name="greensy">#00B76C</color>
+    <color name="greay">#D2D5D4</color>
+    <color name="txt_color">#35474E</color>
+    <color name="white">#fff</color>
+
+    <color name="workouts_color">#0eb664</color>
+
+    <color name="line_color">#E6E9EE</color>
+
+    <color name="calendar_title_text_color">#585858</color>
+    <color name="calendar_month_text_color">#939393</color>
+    <color name="listview_split">#fff</color>
+    <color name="background_color">#ecf4fc</color>
+
+    <color name="blues">#88C6EF</color>
+    <color name="darkGrey">#141414</color>
+    <color name="yellow">#FFDD3F</color>
+    <color name="orange">#FF6859</color>
+
+    <color name="transparent">#C3000000</color>
+
+    <color name="red">#F44236</color>
+    <color name="black">#000000</color>
+    <color name="gray">#F1F0F2</color>
+
+
+</resources>
